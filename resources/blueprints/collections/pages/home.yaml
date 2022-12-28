@@ -1,0 +1,70 @@
+hide: true
+title: Home
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: article_sorted_by
+        field:
+          options:
+            by_date: 'Sort by date'
+            manual: 'Sort manually'
+          default: by_date
+          display: 'Sorted by'
+          type: button_group
+          icon: button_group
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: article_limit
+        field:
+          default: '6'
+          display: 'Article limit'
+          type: integer
+          icon: integer
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          if:
+            article_sorted_by: 'equals by_date'
+      -
+        handle: selected_articles
+        field:
+          mode: default
+          create: true
+          collections:
+            - articles
+          display: 'Selected articles'
+          type: entries
+          icon: entries
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          if:
+            article_sorted_by: 'equals manual'
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - pages
+          max_items: 1
+          listable: false
+          localizable: true

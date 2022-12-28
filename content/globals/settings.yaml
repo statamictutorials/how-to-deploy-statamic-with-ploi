@@ -1,0 +1,14 @@
+title: Settings
+data:
+  title: 'Funk news magazine'
+  name: Funk.
+  slogan: 'The funkiest music magazine in the web.'
+  social_media:
+    -
+      name: 'Statamic Tutorials Twitter'
+      media: twitter
+      url: 'https://twitter.com/jonassiewertsen'
+    -
+      name: 'Funk Instagram'
+      media: instagram
+      url: 'https://facebook.com'

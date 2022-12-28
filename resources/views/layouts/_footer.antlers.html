@@ -1,0 +1,101 @@
+<footer class="bg-accent-1 border-t border-accent-2">
+    <div class="container mx-auto px-5">
+        <div class="py-28 mx-auto max-w-6xl flex flex-col lg:flex-row items-center">
+            <h3 class="text-4xl lg:text-5xl font-bold tracking-tighter leading-tight text-center lg:text-left mb-10 lg:mb-0 lg:pr-4 lg:w-1/2">
+              {{ settings:slogan }}
+            </h3>
+            <div class="flex flex-row justify-end items-right gap-5 lg:w-1/2">
+                {{ settings:social_media }}
+                  <a href="{{ url }}" title="{{ name }}">
+                      <img class="h-8 w-8 hover:opacity-75" alt="{{ name }}" src="/social_media/{{ media }}.svg">
+                  </a>
+                {{ /settings:social_media }}
+            </div>
+        </div>
+
+        <div class="my-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
+            <div class="md:grid md:grid-cols-2 md:gap-8">
+              <div>
+                <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">News</h3>
+                <ul role="list" class="mt-4 space-y-4">
+                  <li>
+                    <a href="#" class="text-base text-gray-500 hover:text-gray-900">Tests</a>
+                  </li>
+    
+                  <li>
+                    <a href="#" class="text-base text-gray-500 hover:text-gray-900">Artists</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="text-base text-gray-500 hover:text-gray-900">Knowledge</a>
+                  </li>
+    
+                  <li>
+                    <a href="#" class="text-base text-gray-500 hover:text-gray-900">Most popular</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mt-12 md:mt-0">
+                <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Events</h3>
+                <ul role="list" class="mt-4 space-y-4">
+                  <li>
+                    <a href="#" class="text-base text-gray-500 hover:text-gray-900">Flensburg</a>
+                  </li>
+    
+                  <li>
+                    <a href="#" class="text-base text-gray-500 hover:text-gray-900">Copenhagen</a>
+                  </li>
+    
+                  <li>
+                    <a href="#" class="text-base text-gray-500 hover:text-gray-900">Madrid</a>
+                  </li>
+    
+                  <li>
+                    <a href="#" class="text-base text-gray-500 hover:text-gray-900">Rom</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="md:grid md:grid-cols-2 md:gap-8">
+              <div>
+                <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Company</h3>
+                <ul role="list" class="mt-4 space-y-4">
+                  <li>
+                    <a href="#" class="text-base text-gray-500 hover:text-gray-900"> About </a>
+                  </li>
+    
+                  <li>
+                    <a href="#" class="text-base text-gray-500 hover:text-gray-900"> Jobs </a>
+                  </li>
+    
+                  <li>
+                    <a href="#" class="text-base text-gray-500 hover:text-gray-900"> Press </a>
+                  </li>
+    
+                  <li>
+                    <a href="#" class="text-base text-gray-500 hover:text-gray-900"> Partners </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mt-12 md:mt-0">
+                <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Legal</h3>
+                <ul role="list" class="mt-4 space-y-4">
+                  <li>
+                    <a href="#" class="text-base text-gray-500 hover:text-gray-900"> Claim </a>
+                  </li>
+    
+                  <li>
+                    <a href="#" class="text-base text-gray-500 hover:text-gray-900"> Privacy </a>
+                  </li>
+    
+                  <li>
+                    <a href="#" class="text-base text-gray-500 hover:text-gray-900"> Terms </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+</footer>

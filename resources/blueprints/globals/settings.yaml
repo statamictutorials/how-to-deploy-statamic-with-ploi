@@ -1,0 +1,117 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          input_type: text
+          antlers: false
+          display: title
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          validate:
+            - required
+      -
+        handle: name
+        field:
+          input_type: text
+          antlers: false
+          display: name
+          type: text
+          icon: text
+          instructions: 'Company short name'
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          validate:
+            - required
+      -
+        handle: name_official
+        field:
+          input_type: text
+          antlers: false
+          display: name_official
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: slogan
+        field:
+          input_type: text
+          antlers: false
+          display: slogan
+          type: text
+          icon: text
+          instructions: 'The company slogan'
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: social_media
+        field:
+          fields:
+            -
+              handle: name
+              field:
+                input_type: text
+                antlers: false
+                display: Name
+                type: text
+                icon: text
+                width: 33
+                listable: hidden
+                instructions_position: above
+                read_only: false
+                validate:
+                  - required
+            -
+              handle: media
+              field:
+                options:
+                  facebook: Facebook
+                  instagram: Instagram
+                  twitter: Twitter
+                multiple: false
+                clearable: false
+                searchable: false
+                taggable: false
+                push_tags: false
+                cast_booleans: false
+                display: media
+                type: select
+                icon: select
+                width: 33
+                listable: hidden
+                instructions_position: above
+                read_only: false
+                validate:
+                  - required
+            -
+              handle: url
+              field:
+                input_type: url
+                antlers: false
+                display: Url
+                type: text
+                icon: text
+                width: 33
+                instructions: 'Always needs to start with https://'
+                listable: hidden
+                instructions_position: above
+                read_only: false
+                validate:
+                  - required
+          mode: table
+          reorderable: true
+          display: social_media
+          type: grid
+          icon: grid
+          listable: hidden
+          instructions_position: above
+          read_only: false
